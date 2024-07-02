@@ -164,6 +164,7 @@ router.get(
 );
 
 // ******* Modification de mot de passe
+
 router.post(
   "/post/modify",
   verificationModfiyPasswordMiddleware,
@@ -207,6 +208,7 @@ router.post(
 );
 
 // ******* Avoir l'email de l'utilisateur via son token
+
 router.get("/get/email/:token", async (req, res) => {
   try {
     const { token } = req.params;

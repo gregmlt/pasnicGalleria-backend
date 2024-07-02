@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
 
 const oeuvreSchema = mongoose.Schema({
-  uniqId: String,
+  image: String,
+  ID: String,
   artiste: { type: mongoose.Schema.Types.ObjectId, ref: "artistes" },
-  editions: String,
+  titre: String,
+  edition: String,
   dimension: String,
-  prix: Number,
+  prix: String,
   notes: String,
   statut: String,
   year: Date,
