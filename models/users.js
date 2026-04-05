@@ -28,8 +28,8 @@ const userSchema = mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ["admin", "user"],
-    default: "user", // Les nouveaux comptes sont "user" par défaut — passer "admin" explicitement si besoin
+    enum: ["superadmin", "admin", "user"],
+    default: "user",
   },
 });
 
